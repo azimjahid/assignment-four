@@ -76,6 +76,10 @@ a.active {
     align-items: center;
 }
 
+.outline{
+    outline: none;
+}
+
 .inp-width {
     min-width: 300px;
 }
