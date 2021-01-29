@@ -82,8 +82,8 @@ a.active {
 
 .plus-minus-btn {
     color: #3352F2;
-    font-size: 30px;
-    padding: 2px;
+    font-size: 20px;
+    padding: 3px;
     margin-top: 10px;
     word-spacing: 20px;
 }
@@ -129,12 +129,13 @@ a.active {
 
 .btn-style {
     display: block;
-    width: 100%;
+    width: 40%;
     padding: 10px;
     border-radius: 5px;
     border: none;
+    outline: none;
     color: #fff;
-    font-weight: 500;
+    font-weight: 700;
     background-color: #3352F2;
 }
 
