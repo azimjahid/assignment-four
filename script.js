@@ -23,9 +23,9 @@
         let tax = (subTotal * 10) / 100;
         let grandTotal = subTotal + tax;
 
-        document.getElementById("sub-total").innerText = '$' + subTotal;
-        document.getElementById("total-tax").innerText = '$' + tax;
-        document.getElementById("grand-total").innerText = '$' + grandTotal;
+        document.getElementById("sub-total").innerHTML = '$' + subTotal;
+        document.getElementById("total-tax").innerHTML = '$' + tax;
+        document.getElementById("grand-total").innerHTML = '$' + grandTotal;
     }
 
     // Ticket amount function part
@@ -39,11 +39,11 @@
     function showPopup() {
         let firstClassTicket = ticketsAmount("firstClass");
         let economyClassTicket = ticketsAmount("economyClass");
-        let totalToPay = document.getElementById("grand-total").innerText;
+        let totalToPay = document.getElementById("grand-total").innerHTML;
 
-        document.getElementById("total-firstClass").innerText = firstClassTicket;
-        document.getElementById("total-economyClass").innerText = economyClassTicket;
-        document.getElementById("total-toPay").innerText = totalToPay;
+        document.getElementById("total-firstClass").innerHTML = firstClassTicket;
+        document.getElementById("total-economyClass").innerHTML = economyClassTicket;
+        document.getElementById("total-toPay").innerHTML = totalToPay;
         document.getElementById("comfirm-ticket").style.transform = 'scale(1) translate(-50%, -50%)';
     }
 
