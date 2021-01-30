@@ -1,3 +1,4 @@
+    
     // ticket increase & decrease part
     function ticketCounting(ticketClass, isIncrease) {
         let ticketsNum = ticketsAmount(ticketClass);
@@ -49,3 +50,5 @@
     function closePopup() {
         document.getElementById("comfirm-ticket").style.transform = 'scale(0) translate(-50%, -50%)';
     }
+    // popup function part end
+    // thank you
