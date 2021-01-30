@@ -81,10 +81,6 @@ a.active {
     align-items: center;
 }
 
-/* .outline {
-    outline: none;
-} */
-
 .inp-width {
     min-width: 300px;
 }
@@ -97,7 +93,7 @@ a.active {
     word-spacing: 5px;
 }
 
-.plus-minus-btn>button {
+.plus-minus-btn button {
     display: inline-block;
     font-size: 20px;
     padding: 2px 1px;
@@ -160,11 +156,11 @@ a.active {
 
 .btn-style {
     display: block;
+    text-transform: uppercase;
     width: 40%;
     padding: 10px;
     border-radius: 5px;
     border: none;
-    outline: none;
     color: #fff;
     font-weight: 700;
     background-color: #3352F2;
@@ -178,18 +174,15 @@ a.active {
 /* popup section start*/
 .popup {
     position: absolute;
-    border-radius: 10px;
     width: 300px;
     height: 200px;
     top: 90%;
     left: 52%;
-    transform: scale(0) translate(-50%, -50%);
+    transform: scale(0);
     transform-origin: top left;
     transition: 0.3s all ease;
     background-color: #F3F5FF;
-}
-
-.popup {
+    border-radius: 10px;
     text-align: center;
     padding: 10px;
 }
@@ -206,9 +199,13 @@ a.active {
     margin: 5px 0px;
 }
 
-.popup button {
-    margin: 25px;
-    padding: 10px;
+.popup .total-amount {
+    margin-top: 12px;
 }
 
+.popup button {
+    margin: 20px;
+    padding: 10px;
+    border: none;
+}
 /* popup section end*/

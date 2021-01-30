@@ -34,35 +34,35 @@
     <!--Booking Section-->
     <main class="main-content container">
         <div class="booking-form">
-            <h3>Booking Flights</h3>
+            <h3>Flight Booking</h3>
             <div class="input-group">
                 <label>Flying From</label>
-                <input class="inp-style outline" placeholder="Dhaka, Bangladesh">
+                <input class="inp-style" placeholder="Dhaka, Bangladesh">
             </div>
             <div class="input-group">
                 <label>Flying To</label>
-                <input class="inp-style outline" placeholder="New York, United States">
+                <input class="inp-style" placeholder="New York, United States">
             </div>
             <div class="inputs">
                 <div class="input-group">
                     <label>Departure</label>
-                    <input class="inp-style outline" type="date">
+                    <input class="inp-style" type="date">
                 </div>
                 <div class="input-group">
                     <label>Return</label>
-                    <input class="inp-style outline" type="date">
+                    <input class="inp-style" type="date">
                 </div>
             </div>
             <div class="input-group f-class">
                 <div>
                     <label>First Class ($150)</label>
-                    <input id="firstClass-tickets" class="inp-style inp-width outline" type="number" value="0">
+                    <input id="firstClass-tickets" class="inp-style inp-width" type="number" value="0">
                     <!-- first js id input-->
                 </div>
                 <div class="plus-minus-btn">
-                    <button class="outline" onclick="ticketCounting('firstClass', true)"> <span class="color-green"><i
+                    <button onclick="ticketCounting('firstClass', true)"> <span class="color-green"><i
                                 class="fas fa-plus"></i></span> </button>
-                    <button class="outline" onclick="ticketCounting('firstClass', false)"> <span class="color-red"><i
+                    <button onclick="ticketCounting('firstClass', false)"> <span class="color-red"><i
                                 class="fas fa-minus"></i></span> </i></button>
                 </div>
             </div>
@@ -70,13 +70,13 @@
             <div class="input-group f-class">
                 <div>
                     <label>Economy ($100)</label>
-                    <input id="economyClass-tickets" class="inp-style inp-width outline" type="number" value="0">
+                    <input id="economyClass-tickets" class="inp-style inp-width" type="number" value="0">
                     <!-- Second js id input-->
                 </div>
                 <div class="plus-minus-btn">
-                    <button class="outline" onclick="ticketCounting('economyClass', true)"> <span class="color-green"><i
+                    <button onclick="ticketCounting('economyClass', true)"> <span class="color-green"><i
                                 class="fas fa-plus"></i></span> </button>
-                    <button class="outline" onclick="ticketCounting('economyClass', false)"> <span class="color-red"><i
+                    <button onclick="ticketCounting('economyClass', false)"> <span class="color-red"><i
                                 class="fas fa-minus"></i></span> </i></button>
                 </div>
             </div>
@@ -125,7 +125,7 @@
             <h2>Confirmation</h2>
             <p>First Class Ticket(s) : <span id="total-firstClass"> 0</span></p>
             <p>Economy Class Ticket(s) : <span id="total-economyClass"> 0</span></p>
-            <p>Total Amount : <span id="total-toPay"> 0</span></p>
+            <p class="total-amount">Total Amount : <span id="total-toPay"> 0</span></p>
             <button class="color-green" onclick="closePopup()">CONFIRM</button>
             <button class="color-red" onclick="closePopup()">CLOSE</button>
         </div>
